@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #d9f8f6;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  padding-left: 20px;
+  background-color: #2cd9d0;
+  box-sizing: border-box;
+  color: white;
+  margin: 0px auto;
+}
+.navOptions {
+  display: inline-flex;
+  padding: 2px;
+  float: inline-end;
+}
+.options {
+  border: 2px solid white;
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  padding: 2px 5px;
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+.options:hover {
+  font-size: 18px;
+}
+
+.contactTable {
+  border-collapse: collapse;
+  border-spacing: 0;
+  outline: none;
+  width: 100%;
+  color: #0b3e3b;
+  background-color: #d9f8f6;
+}
+.contactTable th,
+.contactTable td {
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.contactTable th {
+  font-size: 18px;
+  text-shadow: -2px -2px 5px #2cd9d0;
+}
+
+@media (max-width: 580px) {
+  .navbar {
+    height: 80px;
+  }
+  .contactTable thead {
+    display: none;
+  }
+  .contactTable td {
+    display: block;
+    width: 100%;
+  }
+  .contactTable tr {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+  }
+  .contactTable td {
+    text-align: left;
+    padding-left: 40%;
+    position: relative;
+  }
+  .contactTable td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    padding-left: 15px;
+    font-size: 16px;
+    text-shadow: -2px -2px 3px #cef8f6;
+    width: 40%;
+    font-weight: bold;
+  }
+}
+tr:nth-child(odd) {
+  background-color: #fff;
+}
+.abc :hover {
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: -3px -3px 4px white;
+}
+
+form {
+  padding: 50px 5%;
+}
+input {
+  width: 60%;
+  min-width: 280px;
+  height: 30px;
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px;
+}
+.addBtn,
+.updateBtn {
+  margin-left: 50%;
+  width: 120px;
+  padding: 3px 5px;
+  background-color: #2cd9d0;
+  border: 2px solid #16706a;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.updateBtn:hover {
+  background-color: white;
+  color: #2cd9d0;
+}
+.addBtn:hover {
+  background-color: white;
+  color: #2cd9d0;
+}
